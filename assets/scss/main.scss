@@ -694,16 +694,23 @@ main {
         font-size: 19px;
         line-height: 28px;
       }
-      .block5-link {
+      .block5-btn {
         width: 176px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #000;
         font-weight: 600;
+        background: transparent;
         span {
-          border-bottom: 1px solid #212121;
+          color: #000;
+          border-bottom: 1px solid #000;
+        }
+        &:hover {
+          span {
+            color: #D62626;
+            border-color: #D62626;
+          }
         }
       }
     }
@@ -787,6 +794,20 @@ main {
       }
     }
   }
+  }
+
+  .block6_str {
+    .block6-item {
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(10),
+      &:nth-child(11) {
+        .item-img::before {
+          display: none !important;
+        }
+      }
+ 
+    }
   }
 
   .swiper-btns {
@@ -1081,7 +1102,12 @@ main {
       width: 100%;
       height: 426px;
       object-fit: cover;
+      position: relative;
+      z-index: 2;
     }
+    .swiper-button-lock {
+      display: block;
+  }
     .swiper-btns {
       .btn {
         position: absolute;
@@ -1492,7 +1518,8 @@ footer {
   }
 
   .popUp-connect-us,
-  .popUp-get-price {
+  .popUp-get-price,
+  .popUp-partner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1509,6 +1536,7 @@ footer {
       }
       .form-title {
         margin-bottom: 34px;
+        color: #212121;
       }
     }
   }

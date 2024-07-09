@@ -179,8 +179,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="block1-item">
-                            <img src="assets/img/png/w2.png" alt="" class="item-img d-none d-sm-block">
-                            <img src="assets/img/png/w2.1.png" alt="" class="item-img d-sm-none">
+                            <img src="assets/img/png/w3.png" alt="" class="item-img d-none d-sm-block">
+                            <img src="assets/img/png/w3.1.png" alt="" class="item-img d-sm-none">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
@@ -204,8 +204,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="block1-item">
-                            <img src="assets/img/png/w3.png" alt="" class="item-img d-none d-sm-block">
-                            <img src="assets/img/png/w3.1.png" alt="" class="item-img d-sm-none">
+                            <img src="assets/img/png/w2.png" alt="" class="item-img d-none d-sm-block">
+                            <img src="assets/img/png/w2.1.png" alt="" class="item-img d-sm-none">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
@@ -386,7 +386,7 @@
                     <div class="col-12">
                         <div class="block5-box d-flex justify-content-between align-items-center flex-wrap">
                             <p class="block5-text">Сотрудничаем с торгующими организациями</p>
-                            <a href="#" class="block5-link"><span>Стать партнером</span></a>
+                            <button class="block5-btn"><span>Стать партнером</span></button>
                         </div>
                     </div>
                 </div>
@@ -544,6 +544,63 @@
         </div>
     </div>
 
+    <div class="popUp popUp-partner d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.18421 22C9.04899 22 8.9168 21.9599 8.80436 21.8848C8.69192 21.8097 8.60428 21.703 8.55253 21.578C8.50078 21.4531 8.48724 21.3156 8.51363 21.183C8.54002 21.0504 8.60514 20.9286 8.70077 20.833L21.3335 8.20025C21.4617 8.07203 21.6356 8 21.8169 8C21.9983 8 22.1722 8.07203 22.3004 8.20025C22.4286 8.32846 22.5006 8.50236 22.5006 8.68368C22.5006 8.865 22.4286 9.0389 22.3004 9.16711L9.66764 21.7998C9.60421 21.8634 9.52885 21.9138 9.44589 21.9482C9.36293 21.9825 9.274 22.0001 9.18421 22Z" fill="black"/>
+                    <path d="M21.8169 22C21.7271 22.0001 21.6382 21.9825 21.5552 21.9482C21.4723 21.9138 21.3969 21.8634 21.3335 21.7998L8.70073 9.16711C8.57252 9.0389 8.50049 8.865 8.50049 8.68368C8.50049 8.50236 8.57252 8.32846 8.70073 8.20025C8.82895 8.07203 9.00284 8 9.18417 8C9.36549 8 9.53939 8.07203 9.6676 8.20025L22.3003 20.833C22.396 20.9286 22.4611 21.0504 22.4875 21.183C22.5139 21.3156 22.5003 21.4531 22.4486 21.578C22.3968 21.703 22.3092 21.8097 22.1967 21.8848C22.0843 21.9599 21.9521 22 21.8169 22Z" fill="black"/>
+                </svg>
+            </div>
+            <form class="form">
+                <h3 class="form-title">Стать партнером</h3>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div class="input-box">
+                        <input type="text" class="form__inp" id="name3" name="Имя" placeholder="Ваше имя">
+                        <small></small>
+                        <div class="test">
+                            <img src="assets/img/svg/success.svg" alt="">
+                            <img src="assets/img/svg/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="form__inp" id="email3" name="email" placeholder="Ваш email">
+                        <small></small>
+                        <div class="test">
+                            <img src="assets/img/svg/success.svg" alt="">
+                            <img src="assets/img/svg/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="form__inp" id="phone3" name="Номер телефона" placeholder="Номер телефона">
+                        <small></small>
+                        <div class="test">
+                            <img src="assets/img/svg/success.svg" alt="">
+                            <img src="assets/img/svg/error.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="form__text" id="message3" placeholder="Ваш вопрос" onkeypress="auto_grow3(this)" onkeydown="auto_grow3(this)"></textarea>
+                    <small></small>
+                    <div class="test">
+                        <img src="assets/img/svg/success.svg" alt="">
+                        <img src="assets/img/svg/error.svg" alt="">
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-between align-items-sm-center flex-column flex-sm-row">
+                    <div class="check-box d-flex align-items-center">
+                        <input type="checkbox" id="check1" value="Я хочу получать рассылку" class="check__inp" checked>
+                        <p><label for="check1">Я согласен с</label>  <a href="#">Политикой обработки персональных данных</a></p>
+                    </div>
+                    <button class="form-btn" type="button">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="popUp popUp-thanks d-none">
         <div class="popUp-content thanks text-center">
             <div class="popUp-close">
@@ -563,6 +620,7 @@
     <script src="assets/js/index.js"></script>
     <script src="assets/js/form-connectUs.js"></script>
     <script src="assets/js/form-getPrice.js"></script>
+    <script src="assets/js/form-partner.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/popUp.js"></script>
 </body>
