@@ -1,13 +1,10 @@
 const block1 = new Swiper('.swiper-block1', {
     loop: true,
     spaceBetween: 0,
-    simulateTouch:false, 
-    allowTouchMove: false,
-    slidesPerView: 1,
-        navigation: {
-        nextEl: '.swiper-next-block1',
-        prevEl: '.swiper-prev-block1',
-      },
+    autoplayDisableOnInteraction: false,
+    autoplay: {
+        delay: 3000,
+    }, 
       pagination: {
         el: ".swiper-pagination-block1",
         clickable: true,

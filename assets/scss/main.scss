@@ -524,6 +524,49 @@ header {
 main {
   max-width: 1440px;
   margin: 0 auto;
+
+  .block1 {
+    color: #212121;
+    position: relative;
+    .block1-item {
+      position: relative;
+      width: 100%;
+      height: 448px;
+      padding: 45px 0;
+      .item-info {
+        width: 53%;
+        min-height: 290px;
+      }
+      .title-text {
+        font-weight: 700;
+        margin: 16px 0;
+      }
+      .item-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .item-suptitle {
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+    .swiper-pagination-block1 {
+      position: absolute;
+      left: 50px;
+      bottom: 45px;
+      z-index: 2;
+    }
+    .swiper-pagination-bullet-active {
+      background: #212121;
+    }
+  }
+
+
   .block2 {
     &-box {
       display: flex;

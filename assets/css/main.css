@@ -538,6 +538,44 @@ main {
   max-width: 1440px;
   margin: 0 auto;
 }
+main .block1 {
+  color: #212121;
+  position: relative;
+}
+main .block1 .block1-item {
+  position: relative;
+  width: 100%;
+  height: 448px;
+  padding: 45px 0;
+}
+main .block1 .block1-item .item-info {
+  width: 53%;
+  min-height: 290px;
+}
+main .block1 .block1-item .title-text {
+  font-weight: 700;
+  margin: 16px 0;
+}
+main .block1 .block1-item .item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .block1 .block1-item .item-suptitle img {
+  margin-right: 6px;
+}
+main .block1 .swiper-pagination-block1 {
+  position: absolute;
+  left: 50px;
+  bottom: 45px;
+  z-index: 2;
+}
+main .block1 .swiper-pagination-bullet-active {
+  background: #212121;
+}
 main .block2-box {
   display: flex;
   padding: 40px 0 32px;
@@ -1549,9 +1587,25 @@ footer .get-price span {
     font-size: 12px;
     line-height: 14px;
   }
+  main .block1 .block1-item {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    padding: 20px 0;
+  }
+  main .block1 .block1-item .item-info {
+    min-height: 240px;
+  }
+  main .block1 .block1-item .item-img {
+    object-position: top -220px;
+  }
+  main .block1 .swiper-pagination-block1 {
+    left: 12px;
+    bottom: 20px;
+  }
   main .block2-box {
     display: flex;
-    padding: 40px 0 32px;
+    padding: 24px 0 32px;
     border-bottom: 1px solid #EFF0F2;
   }
   main .block2-item {
@@ -1661,6 +1715,21 @@ footer .get-price span {
   }
 }
 @media (max-width: 767px) {
+  main .block1 .block1-item {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    padding: 42px 0 24px;
+  }
+  main .block1 .block1-item .item-info {
+    min-height: 300px;
+  }
+  main .block1 .block1-item .item-img {
+    object-position: top -220px;
+  }
+  main .block1 .swiper-pagination-block1 {
+    bottom: 90%;
+  }
   main .block4 .form-title {
     margin-top: 24px;
   }
@@ -1758,6 +1827,27 @@ footer .get-price span {
   }
   header .header-btns .get-price {
     margin-right: 0;
+  }
+  main .block1 .block1-item {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 42px 0 24px;
+  }
+  main .block1 .block1-item .item-info {
+    width: 100%;
+    min-height: 440px;
+  }
+  main .block1 .block1-item .title-text {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 12px 0;
+  }
+  main .block1 .block1-item .item-img {
+    object-position: bottom;
+  }
+  main .block1 .swiper-pagination-block1 {
+    bottom: 93%;
   }
   main .block2-box {
     padding: 0;
