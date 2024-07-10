@@ -601,6 +601,7 @@ main {
       height: 238px;
       margin-top: 50px;
       padding: 14px 16px;
+      background: #fff;
       &::before {
         content: url(../img/png/dg.png);
         position: absolute;
@@ -638,6 +639,14 @@ main {
         z-index: 2;
       }
       .item-img {
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 50%;
+       height: 100%;
+       object-fit: contain;
+      }
+      &:first-child .item-img {
         width: 100%;
         height: 100%;
         object-position: right;
@@ -645,6 +654,11 @@ main {
         position: absolute;
         top: 0;
         left: 0;
+      }
+      &:nth-child(2) .item-img {
+        width: 100%;
+        object-fit: cover;
+        // mix-blend-mode: color-burn;
       }
     }
   }
@@ -800,6 +814,7 @@ main {
     .block6-item {
       &:nth-child(7),
       &:nth-child(8),
+      &:nth-child(9),
       &:nth-child(10),
       &:nth-child(11) {
         .item-img::before {
@@ -1307,6 +1322,16 @@ main {
         z-index: 2;
       }
       .item-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        object-fit: contain;
+        object-position: right;
+      }
+      &:nth-child(1) .item-img,
+      &:nth-child(4) .item-img
+       {
         position: absolute;
         top: 0;
         right: 0;

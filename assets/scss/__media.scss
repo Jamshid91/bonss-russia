@@ -40,6 +40,9 @@
                 width: 60%;
               }
             }
+            &:nth-child(4) .item-list {
+              width: 70%;
+            }
           }
         }
 
@@ -239,6 +242,12 @@
             }
            .item-img {
             width: 50%;
+           }
+           &:nth-child(1) .item-img,
+           &:nth-child(4) .item-img
+            {
+             width: 100%;
+             object-fit: contain;
            }
           }
         }
@@ -554,10 +563,10 @@
           margin-bottom: 25px;
           .block11-item { 
             padding: 14px 16px 18px;   
-           .item-img {
-            width: 100%;
-            height: auto;
-           }
+          //  .item-img {
+          //   width: 100%;
+          //   height: auto;
+          //  }
            .item-list {
             width: 80%;
            }
