@@ -648,21 +648,8 @@ main .block3-item .item-img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
-  object-fit: contain;
-}
-main .block3-item:first-child .item-img {
   width: 100%;
   height: 100%;
-  object-position: right;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-main .block3-item:nth-child(2) .item-img {
-  width: 100%;
   object-fit: cover;
 }
 main .block4 {
@@ -738,7 +725,8 @@ main .block6 .title-text {
 main .block6 .block6-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 18px;
+  grid-column-gap: 18px;
+  grid-row-gap: 40px;
   margin: 40px 0 20px;
 }
 main .block6 .block6-item {
@@ -1267,17 +1255,8 @@ main .block11 .block11-item .item-img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
-  object-fit: contain;
-  object-position: right;
-}
-main .block11 .block11-item:nth-child(1) .item-img, main .block11 .block11-item:nth-child(4) .item-img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: right;
 }
 main .block11 .block11-item .item-list {
@@ -1730,13 +1709,6 @@ footer .get-price span {
     width: 143px;
     height: 127px;
   }
-  main .block11 .block11-item .item-img {
-    width: 50%;
-  }
-  main .block11 .block11-item:nth-child(1) .item-img, main .block11 .block11-item:nth-child(4) .item-img {
-    width: 100%;
-    object-fit: contain;
-  }
   main .block12 .block12-box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1953,6 +1925,7 @@ footer .get-price span {
   main .block6 .block6-box {
     grid-template-columns: repeat(1, 1fr);
     margin: 40px 0;
+    grid-row-gap: 18px;
   }
   main .block6 .block6-item {
     min-height: auto;
@@ -1984,16 +1957,35 @@ footer .get-price span {
   }
   main .block11 .block11-item {
     padding: 14px 16px 18px;
+    margin-top: 10px;
+  }
+  main .block11 .block11-item .item-img {
+    width: 100%;
+    object-fit: contain;
   }
   main .block11 .block11-item .item-list {
     width: 80%;
   }
+  main .block11 .block11-item:nth-child(3) .item-img {
+    width: 110%;
+    top: 20px;
+    right: -20px;
+  }
+  main .block11 .block11-item:nth-child(3) .item-list {
+    width: 60%;
+  }
+  main .block11 .block11-item:nth-child(3) .item-list li:first-child {
+    width: 90%;
+  }
+  main .block11 .block11-item:nth-child(2) .item-img {
+    width: 120%;
+  }
   main .block11 .block11-item:nth-child(2) .item-list {
-    width: 80%;
+    width: 70%;
     margin-right: 0;
   }
   main .block11 .block11-item:nth-child(2) .item-list:last-child {
-    width: 80%;
+    width: 70%;
   }
   main .block11 .block11-item .more-details {
     margin-top: 6px;

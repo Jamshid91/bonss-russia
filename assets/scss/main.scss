@@ -642,23 +642,9 @@ main {
        position: absolute;
        top: 0;
        right: 0;
-       width: 50%;
+       width: 100%;
        height: 100%;
-       object-fit: contain;
-      }
-      &:first-child .item-img {
-        width: 100%;
-        height: 100%;
-        object-position: right;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      &:nth-child(2) .item-img {
-        width: 100%;
-        object-fit: cover;
-        // mix-blend-mode: color-burn;
+       object-fit: cover;
       }
     }
   }
@@ -742,7 +728,8 @@ main {
     .block6-box {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 18px;
+      grid-column-gap: 18px;
+      grid-row-gap: 40px;
       margin: 40px 0 20px;
     }
     .block6-item {
@@ -1325,19 +1312,9 @@ main {
         position: absolute;
         top: 0;
         right: 0;
-        width: 40%;
-        object-fit: contain;
-        object-position: right;
-      }
-      &:nth-child(1) .item-img,
-      &:nth-child(4) .item-img
-       {
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        // height: 100%;
+        object-fit: contain;
         object-position: right;
       }
       .item-list {
